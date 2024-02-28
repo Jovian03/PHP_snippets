@@ -1,0 +1,20 @@
+<?php
+$x=15;
+for($i=$x;$i>1;$i--)
+{
+$temp=0;
+for($j=1;$j<=$i;$j++)
+{
+if($i%$j==0)
+{
+$temp=$temp+1;
+}
+}
+if($temp==2)
+{
+echo $i;
+echo"<br>";
+break;
+}
+}
+?>

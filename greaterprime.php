@@ -1,0 +1,23 @@
+<?php
+function prime($a)
+{
+$num=$a;
+for($i=$num;$i<100;$i++)
+{
+$temp=0;
+for($j=1;$j<100;$j++)
+{
+if($i%$j==0)
+{
+$temp+=1;
+}
+}
+if($temp==2)
+{
+echo"$i";
+break;
+}
+}
+}
+prime(50);
+?>
